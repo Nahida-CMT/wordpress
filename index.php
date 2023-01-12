@@ -50,6 +50,43 @@
         </div>
     </section>
     <!-- logo part end -->
+    <!-- Menu part start -->
+    <section class="container-fulid main_menu">
+        <nav class="container navbar-expand">
+            <?php wp_nav_menu(array(
+                'theme_location'=>'primary_menu',
+                'menu_class'=>'navbar-nav menu-1',
+            ));?>
+        </nav>
+    </section>
+    <!-- Menu part end -->
+    <!-- Hero Part start -->
+    <section class="container hero pt-5">
+        <div class="row">
+            <?php dynamic_sidebar('herotitle');?>
+        </div>
+        <div class="row">
+            <!--  -->
+            <div class="div col-sm-4">
+                <div class="card h-100" style="width: 18rem;">
+                <?php dynamic_sidebar('herocard1');?>
+            </div>
+        </div>
+            <!--  -->
+            <div class="div col-sm-4">
+            <div class="card h-100 " style="width: 18rem;">
+                <?php dynamic_sidebar('herocard2');?>
+            </div>
+            </div>
+            <!--  -->
+            <div class="div col-sm-4">
+            <div class="card h-100" style="width: 18rem;">
+                <?php dynamic_sidebar('herocard3');?>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Part end -->
 
 
 

@@ -9,6 +9,7 @@ add_theme_support( 'title-tag' );
      'height' => 480,
      'width'  => 720,
  ) );
+
 add_theme_support( 'post-thumbnails' );
 
 /**
@@ -16,11 +17,45 @@ add_theme_support( 'post-thumbnails' );
  */
 function wpdocs_theme_slug_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'BD logo', 'textdomain' ),
+		'name'          => __( 'BD logo', 'themepadma' ),
 		'id'            => 'bdlogo',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( ' Hero Title', 'themepadma' ),
+		'id'            => 'herotitle',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( ' Hero Card-1', 'themepadma' ),
+		'id'            => 'herocard1',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Hero Card-2', 'themepadma' ),
+		'id'            => 'herocard2',
+		'before_widget' => ' ',
+		'after_widget'  => ' ',
+		
+	) );
+	register_sidebar( array(
+		'name'          => __( 'Hero Card-3', 'themepadma' ),
+		'id'            => 'herocard3',
 		'before_widget' => ' ',
 		'after_widget'  => ' ',
 		
 	) );
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
+
+register_nav_menus( array(
+	'primary_menu' => __( 'Primary Menu', 'themepadma' ),
+	'footer_menu'  => __( 'Footer Menu', 'themepadma' ),
+) );
+
