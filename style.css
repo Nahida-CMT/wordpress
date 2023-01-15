@@ -40,3 +40,19 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 }
+.tt p{
+    font-size: 12px;
+}
+.foot{
+    background: rgb(94, 91, 91);
+    color: white;
+    padding-top: 35px;
+}
+.foot .ft_right ul{
+    list-style: circle;
+}
+.foot .fb{
+    background: #000;
+    padding-top: 8px;
+    height: 40px;
+}

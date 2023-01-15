@@ -51,6 +51,79 @@ function wpdocs_theme_slug_widgets_init() {
 		'after_widget'  => ' ',
 		
 	) );
+
+	register_sidebar([
+		'name'=> 'Line Left',
+		'id'=> 'lineleft',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Photo',
+		'id'=> 'phototitle',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Line Right',
+		'id'=> 'lineright',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Photo card1',
+		'id'=> 'ptohocard1',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Photo card2',
+		'id'=> 'ptohocard2',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Photo card3',
+		'id'=> 'ptohocard3',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Photo card4',
+		'id'=> 'ptohocard4',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'News Title',
+		'id'=> 'newstitle',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Footer Top Left',
+		'id'=> 'ftleft',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Footer Top Right',
+		'id'=> 'ftright',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Footer Bottom Left',
+		'id'=> 'fbleft',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
+	register_sidebar([
+		'name'=> 'Footer Bottom Right',
+		'id'=> 'fbright',
+		'before_widget' => ' ',
+		'after_widget' => ' ',
+	]);
 }
 add_action( 'widgets_init', 'wpdocs_theme_slug_widgets_init' );
 
